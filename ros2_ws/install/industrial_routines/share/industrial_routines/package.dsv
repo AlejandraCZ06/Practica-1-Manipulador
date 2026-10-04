@@ -1,0 +1,6 @@
+source;share/industrial_routines/hook/pythonpath.ps1
+source;share/industrial_routines/hook/pythonpath.dsv
+source;share/industrial_routines/hook/pythonpath.sh
+source;share/industrial_routines/hook/ament_prefix_path.ps1
+source;share/industrial_routines/hook/ament_prefix_path.dsv
+source;share/industrial_routines/hook/ament_prefix_path.sh
