@@ -3,7 +3,7 @@
 Repositorio oficial para la entrega de las rutinas de robótica industrial desarrolladas en ROS2, MoveIt y contenedores Docker.
 
 ## 👥 Integrantes del Equipo
-* **Alejandra Calderón Zambrana** (Escuela Colombiana de Ingeniería Julio Garavito)
+* **Alejandra Calderon Zambrana** (Escuela Colombiana de Ingeniería Julio Garavito)
 * **Andy Joel Herrera Mejía**
 
 ---
