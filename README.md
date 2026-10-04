@@ -1,24 +1,24 @@
-# Practica 1: Manipulador (ROS2 y MoveIt)
+# Práctica 1: Programación y Control de un Manipulador UR5
 
-Repositorio oficial para la entrega de las rutinas de robótica industrial desarrolladas en ROS2, MoveIt y contenedores Docker.
+Este repositorio contiene los archivos y scripts desarrollados para la programación de un robot colaborativo **UR5** utilizando el simulador **URSim CB3 (PolyScope)** y su integración con **ROS 2 Jazzy** para control externo.
 
-## 👥 Integrantes del Equipo
-* **Alejandra Calderon Zambrana** (Escuela Colombiana de Ingeniería Julio Garavito)
-* **Andy Joel Herrera Mejía**
-
----
+## 👥 Integrantes
+- Alejandra Calderón Zambrana
+- Andy Joel Herrera Mejía
 
 ## 📋 Descripción de los Programas
 
-1. **Programa 1 (`programa1_iniciales.py`):** 
-   * Genera trayectorias cartesianas para simular el trazo de las iniciales del equipo completo (**A, C, Z** para Alejandra y **A, J, H, M** para Andy).
-   * Muestra un mensaje emergente (`popup`) interactivo indicando qué letra se va a simular antes de ejecutar cada trayectoria.
+El proyecto se divide en tres rutinas independientes que demuestran diferentes capacidades de programación y control:
 
-2. **Programa 2 (`programa2_control_externo.py`):** 
-   * Activa una salida digital de libre elección en estado alto (`HIGH`) al iniciar.
-   * Despliega un mensaje emergente indicando la transferencia del control a un controlador externo, esperando 5 segundos estrictos tras la confirmación del usuario.
-   * Configura el nodo de *External Control* para la manipulación del robot desde ROS2.
+### 1. Programa 1: Trazado de Iniciales
+Genera trayectorias en URScript para simular el dibujo de las iniciales de los integrantes del grupo (A, H, A, C). 
+- **Características:** Uso de movimientos articulares (`movej`) con orientación fija para evitar singularidades y límites de articulaciones. Incluye mensajes emergentes (`popup`) antes de cada letra.
 
-3. **Programa 3 (`programa3_pick_and_place.py`):** 
-   * Ejecuta una rutina de *Pick and Place* simulando operaciones en al menos dos puntos de recogida.
-   * Incluye puntos intermedios de aproximación en altura (tanto al recoger como al dejar), control del efector final, liberación de carga útil (*payload*) y un bucle de espera mediante una entrada digital en alto para reanudar el ciclo.
+### 2. Programa 2: Control Compartido con ROS 2
+Cede el control del robot a un controlador externo (ROS 2) mediante el driver oficial.
+- **Características:** Activación de salidas digitales, mensajes de advertencia al operador, temporizadores (`sleep`) y un bucle de espera para mantener la conexión RTDE activa.
+- **Bono:** Incluye la configuración para planificar y ejecutar trayectorias usando **MoveIt 2** y **RViz 2**.
+
+### 3. Programa 3: Rutina de Pick and Place
+Simula una operación industrial de recogida y colocación de objetos.
+- **Características:** Secuencia de movimientos con puntos de aproximación (intermedios), activación/desactivación del efector final (salidas digitales) y sincronización con el operador mediante una entrada digital (DI) para reiniciar el ciclo.
