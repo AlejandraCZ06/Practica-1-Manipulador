@@ -1,0 +1,4 @@
+[console_scripts]
+programa1 = industrial_routines.programa1_iniciales:main
+programa2 = industrial_routines.programa2_control_externo:main
+programa3 = industrial_routines.programa3_pick_and_place:main

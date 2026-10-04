@@ -1,0 +1,45 @@
+[1.359s] Invoking command in '/home/alejandra/Practica 1 Manipulador/ros2_ws/src/industrial_routines': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/industrial_routines build --build-base /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build install --record /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/install.log --install-scripts $base/lib/industrial_routines --single-version-externally-managed install_data
+[1.618s] running egg_info
+[1.618s] creating ../../build/industrial_routines/industrial_routines.egg-info
+[1.635s] writing ../../build/industrial_routines/industrial_routines.egg-info/PKG-INFO
+[1.636s] writing dependency_links to ../../build/industrial_routines/industrial_routines.egg-info/dependency_links.txt
+[1.636s] writing entry points to ../../build/industrial_routines/industrial_routines.egg-info/entry_points.txt
+[1.636s] writing requirements to ../../build/industrial_routines/industrial_routines.egg-info/requires.txt
+[1.637s] writing top-level names to ../../build/industrial_routines/industrial_routines.egg-info/top_level.txt
+[1.637s] writing manifest file '../../build/industrial_routines/industrial_routines.egg-info/SOURCES.txt'
+[1.668s] reading manifest file '../../build/industrial_routines/industrial_routines.egg-info/SOURCES.txt'
+[1.669s] writing manifest file '../../build/industrial_routines/industrial_routines.egg-info/SOURCES.txt'
+[1.669s] running build
+[1.669s] running build_py
+[1.669s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build
+[1.670s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib
+[1.670s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+[1.671s] copying industrial_routines/programa3_pick_and_place.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+[1.671s] copying industrial_routines/programa2_control_externo.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+[1.671s] copying industrial_routines/__init__.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+[1.671s] copying industrial_routines/programa1_iniciales.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+[1.672s] running install
+[1.677s] running install_lib
+[1.693s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+[1.694s] copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/programa3_pick_and_place.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+[1.694s] copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/programa2_control_externo.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+[1.694s] copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/__init__.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+[1.694s] copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/programa1_iniciales.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+[1.695s] byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/programa3_pick_and_place.py to programa3_pick_and_place.cpython-312.pyc
+[1.697s] byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/programa2_control_externo.py to programa2_control_externo.cpython-312.pyc
+[1.697s] byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/__init__.py to __init__.cpython-312.pyc
+[1.698s] byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/programa1_iniciales.py to programa1_iniciales.cpython-312.pyc
+[1.699s] running install_data
+[1.699s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index
+[1.699s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index/resource_index
+[1.700s] creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index/resource_index/packages
+[1.700s] copying resource/industrial_routines -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index/resource_index/packages
+[1.700s] copying package.xml -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/industrial_routines
+[1.700s] running install_egg_info
+[1.729s] Copying ../../build/industrial_routines/industrial_routines.egg-info to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines-0.0.0-py3.12.egg-info
+[1.732s] running install_scripts
+[1.932s] Installing programa1 script to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/industrial_routines
+[1.933s] Installing programa2 script to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/industrial_routines
+[1.933s] Installing programa3 script to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/industrial_routines
+[1.933s] writing list of installed files to '/home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/install.log'
+[1.964s] Invoked command in '/home/alejandra/Practica 1 Manipulador/ros2_ws/src/industrial_routines' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/industrial_routines build --build-base /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build install --record /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/install.log --install-scripts $base/lib/industrial_routines --single-version-externally-managed install_data

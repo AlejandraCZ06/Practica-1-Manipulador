@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/industrial_routines/industrial_routines.egg-info
+writing ../../build/industrial_routines/industrial_routines.egg-info/PKG-INFO
+writing dependency_links to ../../build/industrial_routines/industrial_routines.egg-info/dependency_links.txt
+writing entry points to ../../build/industrial_routines/industrial_routines.egg-info/entry_points.txt
+writing requirements to ../../build/industrial_routines/industrial_routines.egg-info/requires.txt
+writing top-level names to ../../build/industrial_routines/industrial_routines.egg-info/top_level.txt
+writing manifest file '../../build/industrial_routines/industrial_routines.egg-info/SOURCES.txt'
+reading manifest file '../../build/industrial_routines/industrial_routines.egg-info/SOURCES.txt'
+writing manifest file '../../build/industrial_routines/industrial_routines.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+copying industrial_routines/programa3_pick_and_place.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+copying industrial_routines/programa2_control_externo.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+copying industrial_routines/__init__.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+copying industrial_routines/programa1_iniciales.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines
+running install
+running install_lib
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/programa3_pick_and_place.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/programa2_control_externo.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/__init__.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+copying /home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/build/lib/industrial_routines/programa1_iniciales.py -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines
+byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/programa3_pick_and_place.py to programa3_pick_and_place.cpython-312.pyc
+byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/programa2_control_externo.py to programa2_control_externo.cpython-312.pyc
+byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines/programa1_iniciales.py to programa1_iniciales.cpython-312.pyc
+running install_data
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index/resource_index
+creating /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index/resource_index/packages
+copying resource/industrial_routines -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/ament_index/resource_index/packages
+copying package.xml -> /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/share/industrial_routines
+running install_egg_info
+Copying ../../build/industrial_routines/industrial_routines.egg-info to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/python3.12/site-packages/industrial_routines-0.0.0-py3.12.egg-info
+running install_scripts
+Installing programa1 script to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/industrial_routines
+Installing programa2 script to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/industrial_routines
+Installing programa3 script to /home/alejandra/Practica 1 Manipulador/ros2_ws/install/industrial_routines/lib/industrial_routines
+writing list of installed files to '/home/alejandra/Practica 1 Manipulador/ros2_ws/build/industrial_routines/install.log'
