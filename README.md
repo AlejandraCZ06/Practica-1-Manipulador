@@ -22,11 +22,3 @@ Repositorio oficial para la entrega de las rutinas de robótica industrial desar
 3. **Programa 3 (`programa3_pick_and_place.py`):** 
    * Ejecuta una rutina de *Pick and Place* simulando operaciones en al menos dos puntos de recogida.
    * Incluye puntos intermedios de aproximación en altura (tanto al recoger como al dejar), control del efector final, liberación de carga útil (*payload*) y un bucle de espera mediante una entrada digital en alto para reanudar el ciclo.
-
----
-
-## 🚀 Instrucciones de Ejecución
-
-1. Clonar el repositorio en tu espacio de trabajo de ROS2:
-   ```bash
-   git clone [https://github.com/AlejandraCZ06/Practica-1-Manipulador.git](https://github.com/AlejandraCZ06/Practica-1-Manipulador.git)
