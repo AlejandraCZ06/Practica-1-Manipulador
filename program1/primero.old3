@@ -1,0 +1,99 @@
+<URProgram name="primero" installation="default" installationRelativePath="../default" directory="/ursim/programs/program1" createdIn="3.15.8.106339" lastSavedIn="3.15.8.106339" robotSerialNumber="2018359999" crcValue="2588156642">
+  <kinematics status="NOT_INITIALIZED" validChecksum="false">
+    <deltaTheta value="0.0, 0.0, 0.0, 0.0, 0.0, 0.0"/>
+    <a value="0.0, -0.425, -0.39225, 0.0, 0.0, 0.0"/>
+    <d value="0.089159, 0.0, 0.0, 0.10915, 0.09465, 0.0823"/>
+    <alpha value="1.570796327, 0.0, 0.0, 1.570796327, -1.570796327, 0.0"/>
+    <jointChecksum value="-1, -1, -1, -1, -1, -1"/>
+  </kinematics>
+  <children>
+    <MainProgram runOnlyOnce="false" InitVariablesNode="false">
+      <children>
+        <Script type="File">
+          <cachedContents>def primero():
+  set_gravity([0.0, 0.0, 9.82])
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
+  set_payload(2.0)
+  set_tool_voltage(0)
+  global v_d = 0.05
+  global v_r = 0.25
+  global a = 0.3
+  global r = 0.002
+  while (True):
+    $ 1 &quot;Program&quot;
+    $ 2 &quot;Popup: A Andy&quot;
+    popup(&quot;Simulando letra: A (Andy)&quot;, &quot;Programa 1&quot;, False, False, True)
+    $ 3 &quot;MoveJ&quot;
+    movej(p[0.400, -0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+    $ 4 &quot;MoveL&quot;
+    movel(p[0.370, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 5 &quot;MoveL&quot;
+    movel(p[0.400, -0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 6 &quot;MoveL&quot;
+    movel(p[0.430, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 7 &quot;MoveJ&quot;
+    movej(p[0.385, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_r)
+    $ 8 &quot;MoveL&quot;
+    movel(p[0.385, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 9 &quot;MoveL&quot;
+    movel(p[0.415, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 10 &quot;Popup: H Herrera&quot;
+    popup(&quot;Simulando letra: H (Herrera)&quot;, &quot;Programa 1&quot;, False, False, True)
+    $ 11 &quot;MoveJ&quot;
+    movej(p[0.400, 0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+    $ 12 &quot;MoveL&quot;
+    movel(p[0.370, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 13 &quot;MoveL&quot;
+    movel(p[0.370, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 14 &quot;MoveJ&quot;
+    movej(p[0.430, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_r)
+    $ 15 &quot;MoveL&quot;
+    movel(p[0.430, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 16 &quot;MoveL&quot;
+    movel(p[0.430, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 17 &quot;MoveJ&quot;
+    movej(p[0.370, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_r)
+    $ 18 &quot;MoveL&quot;
+    movel(p[0.370, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 19 &quot;MoveL&quot;
+    movel(p[0.430, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 20 &quot;Popup: A Alejandra&quot;
+    popup(&quot;Simulando letra: A (Alejandra)&quot;, &quot;Programa 1&quot;, False, False, True)
+    $ 21 &quot;MoveJ&quot;
+    movej(p[0.300, -0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+    $ 22 &quot;MoveL&quot;
+    movel(p[0.270, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 23 &quot;MoveL&quot;
+    movel(p[0.300, -0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 24 &quot;MoveL&quot;
+    movel(p[0.330, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 25 &quot;MoveJ&quot;
+    movej(p[0.285, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_r)
+    $ 26 &quot;MoveL&quot;
+    movel(p[0.285, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 27 &quot;MoveL&quot;
+    movel(p[0.315, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 28 &quot;Popup: C Calderon&quot;
+    popup(&quot;Simulando letra: C (Calderon)&quot;, &quot;Programa 1&quot;, False, False, True)
+    $ 29 &quot;MoveJ&quot;
+    movej(p[0.300, 0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+    $ 30 &quot;MoveL&quot;
+    movel(p[0.330, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 31 &quot;MoveL&quot;
+    movel(p[0.270, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 32 &quot;MoveL&quot;
+    movel(p[0.270, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 33 &quot;MoveL&quot;
+    movel(p[0.330, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    $ 34 &quot;MoveJ&quot;
+    movej(p[0.400, 0.000, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+  end
+end
+primero()
+</cachedContents>
+          <file resolves-to="file">/ursim/programs/program1/primero.script</file>
+        </Script>
+      </children>
+    </MainProgram>
+  </children>
+</URProgram>

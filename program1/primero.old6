@@ -1,0 +1,152 @@
+<URProgram name="primero" installation="default" installationRelativePath="../default" directory="/ursim/programs/program1" createdIn="3.15.8.106339" lastSavedIn="3.15.8.106339" robotSerialNumber="2018359999" crcValue="2588156642">
+  <kinematics status="NOT_INITIALIZED" validChecksum="false">
+    <deltaTheta value="0.0, 0.0, 0.0, 0.0, 0.0, 0.0"/>
+    <a value="0.0, -0.425, -0.39225, 0.0, 0.0, 0.0"/>
+    <d value="0.089159, 0.0, 0.0, 0.10915, 0.09465, 0.0823"/>
+    <alpha value="1.570796327, 0.0, 0.0, 1.570796327, -1.570796327, 0.0"/>
+    <jointChecksum value="-1, -1, -1, -1, -1, -1"/>
+  </kinematics>
+  <children>
+    <MainProgram runOnlyOnce="false" InitVariablesNode="false">
+      <children>
+        <Script type="File">
+          <cachedContents>def primero():
+  set_gravity([0.0, 0.0, 9.82])
+  set_tcp(p[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+  set_payload(2.0)
+  set_tool_voltage(0)
+  
+  global v_dibujo = 0.05
+  global v_rapido = 0.25
+  global a = 0.3
+  global r = 0.002
+  
+  # Orientación segura: Ry=0.2 rad (~11°) para evitar singularidad de muñeca
+  global orientacion = p[0.0, 0.0, 0.0, 3.14159, 0.2, 0.0]
+  
+  # ============================================
+  # POSICIÓN INICIAL SEGURA
+  # ============================================
+  global pos_home = p[0.400, 0.000, 0.350, 3.14159, 0.2, 0.0]
+  
+  popup(&quot;Posicionando robot en zona de escritura&quot;, &quot;Inicio&quot;, False, False, True)
+  movej(pos_home, a, v_rapido)
+  
+  # ============================================
+  # LETRA A (Andy) - Zona: X=0.35-0.45, Y=-0.05, Z=0.25-0.30
+  # ============================================
+  popup(&quot;Simulando letra: A (Andy)&quot;, &quot;Programa 1&quot;, False, False, True)
+  
+  # Aproximación
+  movej(p[0.400, -0.050, 0.350, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Base izquierda
+  movel(p[0.370, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Pico superior
+  movel(p[0.400, -0.050, 0.300, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Base derecha
+  movel(p[0.430, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Traslado para barra horizontal
+  movej(p[0.385, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Barra horizontal
+  movel(p[0.385, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  movel(p[0.415, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Retorno
+  movej(pos_home, a, v_rapido)
+  
+  # ============================================
+  # LETRA H (Herrera) - Zona: X=0.35-0.45, Y=0.05, Z=0.25-0.30
+  # ============================================
+  popup(&quot;Simulando letra: H (Herrera)&quot;, &quot;Programa 1&quot;, False, False, True)
+  
+  # Aproximación
+  movej(p[0.400, 0.050, 0.350, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Vertical izquierda (arriba a abajo)
+  movel(p[0.370, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  movel(p[0.370, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Traslado arriba
+  movej(p[0.430, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Vertical derecha (arriba a abajo)
+  movel(p[0.430, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  movel(p[0.430, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Traslado para barra horizontal
+  movej(p[0.370, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Barra horizontal
+  movel(p[0.370, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  movel(p[0.430, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Retorno
+  movej(pos_home, a, v_rapido)
+  
+  # ============================================
+  # LETRA A (Alejandra) - Zona: X=0.25-0.35, Y=-0.05, Z=0.25-0.30
+  # ============================================
+  popup(&quot;Simulando letra: A (Alejandra)&quot;, &quot;Programa 1&quot;, False, False, True)
+  
+  # Aproximación
+  movej(p[0.300, -0.050, 0.350, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Base izquierda
+  movel(p[0.270, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Pico superior
+  movel(p[0.300, -0.050, 0.300, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Base derecha
+  movel(p[0.330, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Traslado para barra horizontal
+  movej(p[0.285, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Barra horizontal
+  movel(p[0.285, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  movel(p[0.315, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Retorno
+  movej(pos_home, a, v_rapido)
+  
+  # ============================================
+  # LETRA C (Calderon) - Zona: X=0.25-0.35, Y=0.05, Z=0.25-0.30
+  # ============================================
+  popup(&quot;Simulando letra: C (Calderon)&quot;, &quot;Programa 1&quot;, False, False, True)
+  
+  # Aproximación
+  movej(p[0.300, 0.050, 0.350, 3.14159, 0.2, 0.0], a, v_rapido)
+  
+  # Arriba derecha
+  movel(p[0.330, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Arriba izquierda (línea recta)
+  movel(p[0.270, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Abajo izquierda (línea vertical)
+  movel(p[0.270, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # Abajo derecha (línea recta)
+  movel(p[0.330, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_dibujo, r)
+  
+  # ============================================
+  # Retorno final
+  # ============================================
+  movej(pos_home, a, v_rapido)
+  
+end
+
+primero()
+</cachedContents>
+          <file resolves-to="file">/ursim/programs/program1/primero.script</file>
+        </Script>
+      </children>
+    </MainProgram>
+  </children>
+</URProgram>

@@ -1,0 +1,51 @@
+def primero():
+  set_gravity([0.0, 0.0, 9.82])
+  set_tcp(p[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+  set_payload(2.0)
+  set_tool_voltage(0)
+  
+  global v_dibujo = 0.10
+  global v_rapido = 0.50
+  global a = 0.5
+  global r = 0.005
+  
+  popup("Simulando letra: A (Andy)", "Programa 1", False, False, True)
+  movej(p[0.250, -0.100, 0.300, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.200, -0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.300, -0.100, 0.250, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.400, -0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movej(p[0.250, -0.100, 0.200, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.250, -0.100, 0.200, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.350, -0.100, 0.200, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  
+  popup("Simulando letra: H (Herrera)", "Programa 1", False, False, True)
+  movej(p[0.250, 0.100, 0.300, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.200, 0.100, 0.250, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.200, 0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movej(p[0.400, 0.100, 0.250, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.400, 0.100, 0.250, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.400, 0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movej(p[0.200, 0.100, 0.200, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.200, 0.100, 0.200, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.400, 0.100, 0.200, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  
+  popup("Simulando letra: A (Alejandra)", "Programa 1", False, False, True)
+  movej(p[0.550, -0.100, 0.300, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.500, -0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.600, -0.100, 0.250, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.700, -0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movej(p[0.550, -0.100, 0.200, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.550, -0.100, 0.200, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.650, -0.100, 0.200, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  
+  popup("Simulando letra: C (Calderon)", "Programa 1", False, False, True)
+  movej(p[0.800, 0.100, 0.300, 3.14159, 0.0, 0.0], a, v_rapido)
+  movel(p[0.850, 0.100, 0.250, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.750, 0.100, 0.250, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.750, 0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  movel(p[0.850, 0.100, 0.150, 3.14159, 0.0, 0.0], a, v_dibujo, r)
+  
+  movej(p[0.300, 0.000, 0.400, 3.14159, 0.0, 0.0], a, v_rapido)
+end
+
+primero()

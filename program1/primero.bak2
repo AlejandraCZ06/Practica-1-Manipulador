@@ -1,0 +1,69 @@
+def primero():
+  set_gravity([0.0, 0.0, 9.82])
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
+  set_payload(2.0)
+  step_count_945892d3_76cc_4646_a799_2821516d4acf = 0.0
+  thread Step_Counter_Thread_7246f391_1de6_472f_9bf3_e7c678798047():
+    while (True):
+      step_count_945892d3_76cc_4646_a799_2821516d4acf = step_count_945892d3_76cc_4646_a799_2821516d4acf + 1.0
+      sync()
+    end
+  end
+  run Step_Counter_Thread_7246f391_1de6_472f_9bf3_e7c678798047()
+  set_safety_mode_transition_hardness(1)
+  set_tool_voltage(0)
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_input_actions_to_default()
+  while (True):
+    $ 1 "Robot Program"
+    $ 2 "Script: primero.script"
+      set_gravity([0.0, 0.0, 9.82])
+      global v_d = 0.05
+      global v_r = 0.25
+      global a = 0.3
+      global r = 0.002
+    
+      popup("Simulando letra: A (Andy)", "Programa 1", False, False, True)
+      movej(p[0.400, -0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.370, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.400, -0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.430, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movej(p[0.385, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.385, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.415, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    
+      popup("Simulando letra: H (Herrera)", "Programa 1", False, False, True)
+      movej(p[0.400, 0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.370, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.370, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movej(p[0.430, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.430, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.430, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movej(p[0.370, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.370, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.430, 0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    
+      popup("Simulando letra: A (Alejandra)", "Programa 1", False, False, True)
+      movej(p[0.300, -0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.270, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.300, -0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.330, -0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movej(p[0.285, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.285, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.315, -0.050, 0.275, 3.14159, 0.2, 0.0], a, v_d, r)
+    
+      popup("Simulando letra: C (Calderon)", "Programa 1", False, False, True)
+      movej(p[0.300, 0.050, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+      movel(p[0.330, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.270, 0.050, 0.300, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.270, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+      movel(p[0.330, 0.050, 0.250, 3.14159, 0.2, 0.0], a, v_d, r)
+    
+      movej(p[0.400, 0.000, 0.350, 3.14159, 0.2, 0.0], a, v_r)
+  end
+end
